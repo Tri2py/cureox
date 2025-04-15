@@ -1,0 +1,247 @@
+/* Hero Section Styles - Simplified Octopus Inspired */
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-text);
+    background: #000;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url('../images/HeroSection.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 2;
+}
+
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+/* Glow effect container */
+.hero-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(102, 204, 255, 0.2) 0%, rgba(0, 153, 204, 0.1) 30%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 0;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 4;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-title-wrapper {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#hero-company {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    opacity: 0;
+    text-shadow: 0 0 10px rgba(102, 204, 255, 0.5);
+}
+
+#hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    opacity: 0;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-desc-wrapper {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#hero-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    opacity: 0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    #hero-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 600px;
+    }
+
+    #hero-company {
+        font-size: 1.2rem;
+        letter-spacing: 6px;
+    }
+
+    #hero-title {
+        font-size: 2.2rem;
+    }
+
+    #hero-desc {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-company {
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+
+    #hero-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Particle Styles */
+.particle {
+    position: absolute;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0.5;
+    box-shadow: 0 0 5px 1px rgba(102, 204, 255, 0.3);
+    transform-origin: center center;
+    will-change: transform, opacity;
+}
+
+.particle.streak {
+    border-radius: 4px;
+    transform-origin: left center;
+    box-shadow: 0 0 15px 3px rgba(102, 204, 255, 0.4);
+}
+
+.particle.floater {
+    border-radius: 50%;
+    transform-origin: center center;
+    box-shadow: 0 0 25px 8px rgba(102, 204, 255, 0.3);
+    opacity: 0.3;
+    z-index: 2;
+}
+
+/* Add a subtle pulse animation to some particles */
+@keyframes particlePulse {
+    0% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 0.5; }
+}
+
+/* Button Hover Effects */
+.hero .btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero .btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.hero .btn:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.hero .btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border: none;
+}
+
+.hero .btn-secondary {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.hero .btn-secondary:hover {
+    background: rgba(102, 204, 255, 0.1);
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CureOx Medical Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <h3 id="loading-text">Loading...</h3>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html#home">
+                    <h1>cureox</h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="index.html#about" id="nav-about">About</a></li>
+                    <li><a href="index.html#services" id="nav-services">Services</a></li>
+                    <li><a href="index.html#projects" id="nav-projects">Products</a></li>
+                    <li><a href="index.html#process" id="nav-process">Our Process</a></li>
+                    <li><a href="#" id="language-switch" class="language-btn" title="Switch Language"><i class="fas fa-language"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Register Section -->
+    <section class="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-header">
+                    <h2 id="register-title">Create an Account</h2>
+                    <p id="register-subtitle">Sign up to access our products and services</p>
+                </div>
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Full Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email Address</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" id="password-label">Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Create a password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password" id="confirm-password-label">Confirm Password</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="terms" required>
+                            <label for="terms" id="terms-label">I agree to the <a href="#">Terms & Conditions</a></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="register-button">Create Account</button>
+                    <div class="register-link">
+                        <span id="have-account">Already have an account?</span>
+                        <a href="login.html" id="login-link">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2 id="best-software">Best Software Company</h2>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" id="footer-home">Home</a></li>
+                        <li><a href="#" id="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-conditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright">&copy; 2025 Cureox - All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CureOx - Medical Software Development</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/translations.js"></script>
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+        <h3 id="loading-text">Loading...</h3>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <h1>cureox</h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active" id="nav-home">Home</a></li>
+                    <li><a href="#about" id="nav-about">About</a></li>
+                    <li><a href="#services" id="nav-services">Services</a></li>
+                    <li><a href="#projects" id="nav-projects">Products</a></li>
+                    <li><a href="#process" id="nav-process">Our Process</a></li>
+                    <li><a href="#" id="language-switch" class="language-btn" title="Switch Language"><i class="fas fa-language"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-title-wrapper">
+                    <h1 id="hero-company">CUREOX</h1>
+                    <h2 id="hero-title">20 Years of Excellence in Medical Software Development</h2>
+                </div>
+                <div class="hero-desc-wrapper">
+                    <p id="hero-desc">Comprehensive digital solutions connecting healthcare providers with beneficiaries to deliver outstanding and efficient healthcare services.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#about" class="btn btn-primary" id="learn-more">Learn More</a>
+                    <a href="#contact" class="btn btn-secondary" id="lets-talk">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="about-us">About Us</h3>
+                <h2 id="about-title">About the Project</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-desc">We are a specialized company in medical software development, aiming to empower the healthcare sector through advanced technology solutions that enhance efficiency, accuracy, and ease of use. With over 20 years of experience, we provide innovative systems that connect healthcare providers with beneficiaries, improving service quality and streamlining administrative and medical processes. Our vision is to offer smart solutions that meet the needs of the healthcare sector while maintaining the highest standards of quality and security.</p>
+                </div>
+                <div class="about-image">
+                    <div class="icon-container">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="our-services">Our Services</h3>
+                <h2 id="services-title">Our Specialized Digital Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 id="service1-title">Appointment Scheduling System</h3>
+                    <p id="service1-desc">A simple and fast system for managing patient appointments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 id="service2-title">Report Generation</h3>
+                    <p id="service2-desc">Create and print daily, monthly, and performance reports.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 id="service3-title">Patient Records Management</h3>
+                    <p id="service3-desc">Organize patient files and link them to diagnostic results.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 id="service5-title">Technical Support</h3>
+                    <p id="service5-desc">24/7 support team to meet all your technical needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="projects" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="our-products">Our Products</h3>
+                <h2 id="products-title">See Our Products</h2>
+            </div>
+
+
+            <div class="product-cards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="icon-container">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 id="product1-title">Pharmacy App</h3>
+                        <p id="product1-desc">An integrated pharmacy management software providing a comprehensive solution for handling daily operations such as inventory management, sales, alternatives, and financial reports. It includes an advanced search function allowing users to find medications using a barcode, trade name, or chemical composition, ensuring quick access to information.</p>
+                        <a href="product1.html" class="btn btn-outline" id="see-product1">See Product</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="icon-container">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 id="product2-title">Dentist App</h3>
+                        <p id="product2-desc">Manage your clinic and track operations easily from anywhere, offering flexibility in work. The app provides full archiving of patient records and panoramic images, with an innovative dental chart allowing easy and visual documentation of treatments and prescriptions.</p>
+                        <a href="product2.html" class="btn btn-outline" id="see-product2">See Product</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="icon-container">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 id="product3-title">Doctor App</h3>
+                        <p id="product3-desc">A comprehensive clinic management system supporting all medical specialties. The software features an easy-to-use interface for adding medical treatments, an effective appointment scheduling system, and detailed reports on prescriptions and medical tests.</p>
+                        <a href="product3.html" class="btn btn-outline" id="see-product3">See Product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="why-us-subtitle">Why Choose Us?</h3>
+                <h2 id="why-us-title">Twenty Years of Experience</h2>
+            </div>
+            <div class="why-us-content">
+                <div class="why-us-text">
+                    <div class="why-us-points">
+                        <div class="why-us-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4 id="why-us-point1">Proven Track Record</h4>
+                                <p id="why-us-point1-desc">Over 20 years of experience – a proven track record in medical software development, making us a trusted partner in the healthcare sector.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4 id="why-us-point2">User-friendly Interface</h4>
+                                <p id="why-us-point2-desc">User-friendly & flexible interface – a modern and interactive system ensuring a seamless user experience for doctors and administrators alike.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4 id="why-us-point3">Complete Data Integration</h4>
+                                <p id="why-us-point3-desc">Complete data integration – we connect all medical services in one platform for smooth and fast information management.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4 id="why-us-point4">Guaranteed Security & Privacy</h4>
+                                <p id="why-us-point4-desc">Guaranteed security & privacy – our system complies with global standards for patient data protection and ensures top-level security.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-point">
+                            <div class="point-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="point-content">
+                                <h4 id="why-us-point5">24/7 Technical Support</h4>
+                                <p id="why-us-point5-desc">24/7 technical support – our team is available around the clock to resolve any technical issues and ensure uninterrupted service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h3 id="our-process">Our Process</h3>
+                <h2 id="process-title">Cureox Work Methodology</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number-container">
+                        <div class="cube">
+                            <div class="cube-face cube-face-front">01</div>
+                            <div class="cube-face cube-face-back">01</div>
+                            <div class="cube-face cube-face-right">01</div>
+                            <div class="cube-face cube-face-left">01</div>
+                            <div class="cube-face cube-face-top">01</div>
+                            <div class="cube-face cube-face-bottom">01</div>
+                        </div>
+                    </div>
+                    <div class="particles-container"></div>
+                    <h4 id="process1-title">Client Needs Analysis</h4>
+                    <p id="process1-desc">We study user requirements to provide customized solutions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number-container">
+                        <div class="cube">
+                            <div class="cube-face cube-face-front">02</div>
+                            <div class="cube-face cube-face-back">02</div>
+                            <div class="cube-face cube-face-right">02</div>
+                            <div class="cube-face cube-face-left">02</div>
+                            <div class="cube-face cube-face-top">02</div>
+                            <div class="cube-face cube-face-bottom">02</div>
+                        </div>
+                    </div>
+                    <div class="particles-container"></div>
+                    <h4 id="process2-title">Continuous Development & Updates</h4>
+                    <p id="process2-desc">We ensure system updates with the latest technologies and best practices.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number-container">
+                        <div class="cube">
+                            <div class="cube-face cube-face-front">03</div>
+                            <div class="cube-face cube-face-back">03</div>
+                            <div class="cube-face cube-face-right">03</div>
+                            <div class="cube-face cube-face-left">03</div>
+                            <div class="cube-face cube-face-top">03</div>
+                            <div class="cube-face cube-face-bottom">03</div>
+                        </div>
+                    </div>
+                    <div class="particles-container"></div>
+                    <h4 id="process3-title">Security & Privacy</h4>
+                    <p id="process3-desc">We implement encryption standards and data protection to ensure complete confidentiality.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number-container">
+                        <div class="cube">
+                            <div class="cube-face cube-face-front">04</div>
+                            <div class="cube-face cube-face-back">04</div>
+                            <div class="cube-face cube-face-right">04</div>
+                            <div class="cube-face cube-face-left">04</div>
+                            <div class="cube-face cube-face-top">04</div>
+                            <div class="cube-face cube-face-bottom">04</div>
+                        </div>
+                    </div>
+                    <div class="particles-container"></div>
+                    <h4 id="process4-title">Smart Integration</h4>
+                    <p id="process4-desc">We ensure seamless integration of all medical systems to enhance user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>cureox</h2>
+                    <p id="best-software">Best Software Company</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home" id="footer-home">Home</a></li>
+                        <li><a href="#" id="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-conditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright">&copy; 2025 Cureox - All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Custom Cursor (Octopus Style) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="js/script.js"></script>
+    <script src="js/hero-animations.js"></script>
+</body>
+</html>

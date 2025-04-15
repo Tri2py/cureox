@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist App - CureOx Medical Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/translations.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <h3 id="loading-text">Loading...</h3>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html#home">
+                    <h1>cureox</h1>
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="nav-home">Home</a></li>
+                    <li><a href="index.html#about" id="nav-about">About</a></li>
+                    <li><a href="index.html#services" id="nav-services">Services</a></li>
+                    <li><a href="index.html#projects" class="active" id="nav-projects">Products</a></li>
+                    <li><a href="index.html#process" id="nav-process">Our Process</a></li>
+                    <li><a href="#" id="language-switch" class="language-btn" title="Switch Language"><i class="fas fa-language"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero Image -->
+    <div class="product-hero">
+        <img src="images/Dentist.jpg" alt="Dentist App" class="product-hero-image">
+        <div class="hero-content">
+            <h1 id="dentist-hero-title">Dental Practice Management</h1>
+            <p id="dentist-hero-desc">Advanced solutions for modern dental clinics</p>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-header">
+                <h1 id="product-title">Dentist App</h1>
+                <p class="product-tagline" id="product-tagline">Complete Dental Practice Management Solution</p>
+                <div class="product-price">
+                    <span class="price" id="product-price">$2,499</span>
+                    <span class="period" id="price-period">/ year</span>
+                </div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span id="product-reviews">(5.0/5 - 87 reviews)</span>
+                </div>
+            </div>
+
+            <div class="product-content">
+                <div class="product-info">
+                    <div class="product-description">
+                        <h2 id="product-overview">Product Overview</h2>
+                        <p id="product-overview-text">Manage your dental clinic and track operations easily from anywhere, offering flexibility in work. The app provides full archiving of patient records and panoramic images, with an innovative dental chart allowing easy and visual documentation of treatments and prescriptions.</p>
+                    </div>
+
+                    <div class="product-cta">
+                        <a href="login.html" class="btn btn-primary buy-now" id="buy-now">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h2 id="related-products">Related Products</h2>
+                <div class="related-grid">
+                    <a href="product1.html" class="related-item">
+                        <div class="icon-container medium">
+                            <i class="fas fa-prescription-bottle-alt"></i>
+                        </div>
+                        <h3 id="related-product1-title">Pharmacy App</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </a>
+                    <a href="product3.html" class="related-item">
+                        <div class="icon-container medium">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 id="related-product3-title">Doctor App</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2 id="best-software">Best Software Company</h2>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html" id="footer-home">Home</a></li>
+                        <li><a href="#" id="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-conditions">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="copyright">&copy; 2025 Cureox - All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script>
+        // Add direct event listener to language switch button
+        document.addEventListener('DOMContentLoaded', function() {
+            const langSwitch = document.getElementById('language-switch');
+            if (langSwitch) {
+                langSwitch.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Language switch clicked directly on product page');
+                    // Force translation of hero content
+                    setTimeout(function() {
+                        const heroTitle = document.getElementById('dentist-hero-title');
+                        const heroDesc = document.getElementById('dentist-hero-desc');
+                        if (heroTitle && currentLang === 'ar') {
+                            heroTitle.textContent = translations[currentLang].dentistHeroTitle;
+                        }
+                        if (heroDesc && currentLang === 'ar') {
+                            heroDesc.textContent = translations[currentLang].dentistHeroDesc;
+                        }
+                    }, 100);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
